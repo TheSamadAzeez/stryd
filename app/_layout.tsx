@@ -15,7 +15,7 @@ if (!publishableKey) {
 export default function Layout() {
   return (
     <>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="dark-content" />
       <ClerkProvider publishableKey={publishableKey} tokenCache={tokenCache}>
         <Slot />
       </ClerkProvider>
