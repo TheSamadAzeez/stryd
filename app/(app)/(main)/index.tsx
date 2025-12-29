@@ -3,7 +3,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { StatusBar, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-// Use `useClerk()` to access the `signOut()` function
 
 export default function Home() {
   const { signOut } = useClerk();
@@ -45,6 +44,7 @@ export default function Home() {
           <View className="flex-row items-center justify-center">
             {/* Settings Button */}
             <TouchableOpacity
+              activeOpacity={0.8}
               className="mr-4 h-14 w-14 items-center justify-center rounded-full bg-white shadow-sm"
               style={{
                 shadowColor: '#000',
@@ -59,6 +59,7 @@ export default function Home() {
             {/* START Button */}
             <View className="items-center">
               <TouchableOpacity
+                activeOpacity={0.8}
                 className="h-40 w-40 items-center justify-center rounded-full bg-[#FF6B35] shadow-lg"
                 style={{
                   shadowColor: '#FF6B35',
@@ -73,6 +74,7 @@ export default function Home() {
 
             {/* Music Button */}
             <TouchableOpacity
+              activeOpacity={0.8}
               className="ml-4 h-14 w-14 items-center justify-center rounded-full bg-white shadow-sm"
               style={{
                 shadowColor: '#000',
