@@ -78,7 +78,9 @@ export default function WelcomeScreen() {
         {/* Welcome Text */}
         <View className="mb-12">
           <Text className="mb-3 text-center text-5xl font-bold text-white">Stryd</Text>
-          <Text className="text-center text-lg text-gray-300">Move Fast. Go Far. Together.</Text>
+          <Text className="text-center text-lg text-gray-300">
+            Your Pace. Our Heartbeat. One Rhythm.
+          </Text>
         </View>
 
         {/* Auth Buttons */}
