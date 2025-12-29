@@ -18,10 +18,11 @@ export default function WelcomeScreen() {
       });
 
       if (createdSessionId && setActive) {
-        setActive({
+        await setActive({
           session: createdSessionId,
-          navigate: () => router.replace('/(app)/(main)'),
         });
+        // Navigate immediately after auth state updates
+        router.replace('/(app)/(main)');
       }
     } catch (err: any) {
       console.error('Apple OAuth error:', {
@@ -40,10 +41,11 @@ export default function WelcomeScreen() {
       });
 
       if (createdSessionId && setActive) {
-        setActive({
+        await setActive({
           session: createdSessionId,
-          navigate: () => router.replace('/(app)/(main)'),
         });
+        // Navigate immediately after auth state updates
+        router.replace('/(app)/(main)');
       }
     } catch (err: any) {
       console.error('Google OAuth error:', {
